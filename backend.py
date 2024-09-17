@@ -1,6 +1,5 @@
 import requests
 
-api_key = 'fd3e75819924aacc7af4bc398df85432'
 def get_data(place='tokyo' , day='1', api_key):
     url = f'http://api.openweathermap.org/data/2.5/forecast?q={place}&units=metric&appid={api_key}'
     response = requests.get(url)
