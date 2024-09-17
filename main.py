@@ -13,7 +13,7 @@ days = st.slider(label = 'Select the number of days ',
 data_to_display =  st.selectbox(label='Select data to view ',
                                 options=['Temperature' , 'Sky'] , key = 'data')
 try:
-    temperature,dates,sky = get_data(place=place,day=days,api_key)
+    temperature,dates,sky = get_data(place=place,day=days,api_key=api_key)
 
     if days == 1:
         s = ''
